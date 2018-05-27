@@ -54,3 +54,16 @@ input {
         text-decoration: underline;
     }
 }
+
+@media screen and (max-width: 479px) {
+    .input__double {
+        flex-flow: column;
+        .form__input:nth-child(1) {
+            margin-right: 0;
+            margin-bottom: 24px;
+        }
+        .form__input:nth-child(2) {
+            margin-left: 0;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+@media screen and (max-width: 1200px) {
+    .header__msg__box {
+        flex-flow: column-reverse;
+        align-items: flex-start;
+    }
+    .header__cb__box {
+        align-items: flex-end;
+        flex-flow: column;
+    }
+    .header__msg__btn, 
+    .header__cb__btn {
+        margin: 0;
+        margin-top: 8px;
+    }
+    .dignity__elem {
+        margin-bottom: 24px;
+    }
+    .ask__input, .ask__btn {
+        max-width: 290px; 
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .header__menu__box {
+        display: none;
+    }
+    .header__address {
+        max-width: 125px;
+    }
+    .catalog__links__elem {
+        margin-bottom: 24px;
+    }
+    .callback {
+        background-position: right top;
+    }
+    .ask__input, .ask__btn {
+        max-width: 210px; 
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header__msg__box, 
+    .header__cb__box {
+        display: none;
+    }
+    .header__logo {
+        max-width: 320px;
+        width: 100%;
+    }
+    .header__content__caption {
+        font-size: 32px;
+    }
+    .header__content__btn__default {
+        margin-left: 15px;
+    }
+    .ask__form {
+        flex-flow: column;
+    }
+    .ask__input, .ask__btn {
+        max-width: 350px; 
+    }
+    .ask__input {
+        margin-bottom: 24px;
+    }
+}
+@media screen and (max-width: 566px) {
+    .footer__box {
+        flex-flow: column;
+        justify-content: center;
+    }
+    .logo__dev {
+        margin-top: 24px;
+    }
+}
+
+
+@media screen and (max-width: 479px) {
+    .header__content__caption {
+        font-size: 20px;
+    }
+    .callback__caption {
+        font-size: 32px;
+    }
+    .used__cars__btn {
+        max-width: 290px;
+    }
+    .ask__input, .ask__btn {
+        max-width: 290px; 
+    }
+}
