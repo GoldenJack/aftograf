@@ -4,3 +4,99 @@
 .decoration {
     text-decoration: underline;
 }
+.bold {
+    font-weight: bold;
+}
+.normal {
+    font-weight: 300;
+}
+.size__16 {
+    font-size: 16px;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.text__center {
+    text-align: center;
+}
+
+.rub {
+    position: relative;
+    &:after {
+        content: ' ₽';
+        font-size: 36px;
+    }
+}
+
+.dig__block {
+    background: #FFFFFF;
+    box-shadow: 0px 24px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.dig__header {
+    background: #E30613;
+    padding: 21px 46px 7px;
+    position: relative;
+    margin-bottom: 104px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -40px;
+        border-top: 40px solid #E30613;
+        border-left: 175px solid transparent;
+        border-right: 174px solid transparent;
+    }
+}
+.dig__header__caption {
+    font-family: $ff;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 36px;
+    text-align: center;
+}
+.dig__header__desc {
+    font-family: $ff;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+}
+.dig__body {
+    padding: 0 46px 39px;
+}
+.dig__body__caption {
+    font-family: $ff;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    color: #BDBDBD;
+    margin-bottom: 11px;
+}
+.dig__body__desc {
+    font-family: $ff;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 45px;
+}
+.money__price {
+    font-family: $ff;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 64px;
+    color: #E30613;
+    margin-bottom: 63px;
+}
+.dig__btn {
+    width: 253px;
+    height: 40px;
+}

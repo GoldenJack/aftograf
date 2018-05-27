@@ -4,58 +4,324 @@
     <meta charset="UTF-8">
     <title>Avtograf</title>
     <link rel="stylesheet" type="text/css" href="css/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    
-    <header class="header" id="header">
-        <div class="header__top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4 header__msg__box">
-                        <a href="#" class="btn header__msg__btn">Написать нам</a>
-                        <a href="mailto: avtografnew@mail.ru" class="header__msg__mail">avtografnew@mail.ru</a>
-                    </div>
-                    <div class="col-4 header__address__box">
-                        <p class="header__address">г. Ижевск, ул. Маяковского 1А</p>
-                    </div>
-                    <div class="col-4 header__cb__box">
-                        <a href="tel: 8(3412) 910-000" class="header__cb__phone">8(3412) 910-000</a>
-                        <a href="#" class="btn header__cb__btn">Обратный звонок</a>
+    <div class="main">
+        <header class="header" id="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 header__msg__box">
+                            <a href="#" class="btn header__msg__btn btn__blue">Написать нам</a>
+                            <a href="mailto: avtografnew@mail.ru" class="header__msg__mail white bold size__16">avtografnew@mail.ru</a>
+                        </div>
+                        <div class="col-4 header__address__box">
+                            <img src="images/geo.svg" class="header__address__geo">
+                            <p class="header__address white size__16">
+                                г. Ижевск, <span class="bold"> ул. Маяковского 1А</span>
+                            </p>
+                        </div>
+                        <div class="col-4 header__cb__box">
+                            <a href="tel: 8(3412) 910-000" class="header__cb__phone white size__16">8(3412)<span class="bold"> 910-000</span></a>
+                            <a href="#" class="btn header__cb__btn btn__blue">Обратный звонок</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="header__menu">
-            <div class="container">
-                <div class="row">
-                
+            <div class="header__menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 header__menu__box">
+                            <a href="#" class="header__menu__link uppercase white">Подбор авто</a>
+                            <a href="#" class="header__menu__link uppercase white">Сертификаты</a>
+                            <a href="#" class="header__menu__link uppercase white">Услуги</a>
+                        </div>
+                        <div class="col-4">
+                            <div class="header__logo__box">
+                                <img src="images/logo.svg" class="header__logo">
+                            </div>
+                        </div>
+                        <div class="col-4 header__menu__box">
+                            <a href="#" class="header__menu__link uppercase white">О компании</a>
+                            <a href="#" class="header__menu__link uppercase white">Отзывы</a>
+                            <a href="#" class="header__menu__link uppercase white">Контакты</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="header__content">
-            <div class="container">
-                <div class="row">
-                
+            <div class="header__content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="header__content__caption text__center white uppercase">Мультибрендовый салон <br> <span class="normal">по продаже автомобилей из Китая</span></h1>
+                            <p class="header__content__desc text__center white">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру <br> сгенерировать несколько абзацев более менее осмысленного текста</p>
+                            <div class="header__content__btns">
+                                <a href="#" class="btn btn__red header__content__btn__red">Подбор авто</a>
+                                <a href="#" class="btn btn__default header__content__btn__default">Каталог услуг</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <main class="content">
-        <div class="container">
-            <div class="row">
-                
+        <section class="catalog__links">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="catalog__links__elem">
+                            <img src="images/foton_logo.png" alt="" class="catalog__link__image">
+                            <a href="#" class="btn btn__red catalog__link__btn">Каталог «Hower»</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="catalog__links__elem">
+                            <img src="images/foton_logo.png" alt="" class="catalog__link__image">
+                            <a href="#" class="btn btn__red catalog__link__btn">Каталог «Foton»</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="catalog__links__elem">
+                            <img src="images/foton_logo.png" alt="" class="catalog__link__image">
+                            <a href="#" class="btn btn__red catalog__link__btn">Каталог «Lifan»</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="catalog__links__elem">
+                            <img src="images/foton_logo.png" alt="" class="catalog__link__image">
+                            <a href="#" class="btn btn__red catalog__link__btn">Каталог «Faw»</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </main>
-
-    <footer class="footer" id="footer">
-        <div class="container">
-            <div class="row">
-                
+        </section>
+        <section class="callback">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 callback__box">
+                        <h2 class="callback__caption white uppercase">Обратная связь</h2>
+                        <p class="callback__desc white">Оставьте заявку на на подбор или оценку автомобиля, запись на сервис, запись на гостехосмотр, запись на автомойку и наш менеджер перезвонит вам в течнии 10 минут для помощи в подборе оптимального варианта.</p>
+                        <form action="#" class="callback__form">
+                            <div class="input__double">
+                                <input type="text" name="name" placeholder="Ваше имя" class="form__input callback__input">
+                                <input type="text" name="phone" placeholder="Ваш номер телефона" class="form__input callback__input">
+                            </div>
+                            <textarea class="form__textarea callback__textarea" placeholder="Комментарий к заявке"></textarea>
+                            <div class="form__btn__polit">
+                                <input type="submit" name="submit" class="btn btn__red callback__btn" placeholder="Оставить заявку">
+                                <p class="form__politics">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <br><a href="#" class="politics__url"> Узнать больше</a> </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
+        </section>
+        <section class="dignity">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="dignity__elem">
+                            <div class="dignity__image__box">
+                                <img src="images/diploma.svg" class="dignity__image">
+                            </div>
+                            <h3 class="dignity__caption uppercase">Официальный диллер</h3>
+                            <p class="dignity__desc">Единственный мультибрендовый салон по продаже автомобилей китайских производителей в УР</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="dignity__elem">
+                            <div class="dignity__image__box">
+                                <img src="images/003-mechanic.svg" class="dignity__image">
+                            </div>
+                            <h3 class="dignity__caption uppercase">Полный комплекс услуг по сервису</h3>
+                            <p class="dignity__desc">Ремонт ДВС, замена, ремонт ходовой части, замена масла, заправка кондиционера, запчасти в наличии и под заказ</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="dignity__elem">
+                            <div class="dignity__image__box">
+                                <img src="images/002-car.svg" class="dignity__image">
+                            </div>
+                            <h3 class="dignity__caption uppercase">Большой выбор автомобилей</h3>
+                            <p class="dignity__desc">От новых до автомобилей с пробегом</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="dignity__elem">
+                            <div class="dignity__image__box">
+                                <img src="images/001-like.svg" class="dignity__image">
+                            </div>
+                            <h3 class="dignity__caption uppercase">Соотношение Цена = качество</h3>
+                            <p class="dignity__desc">Лучшие цены в Ижевске</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="services__caption white uppercase">Каталог услуг</h2>
+                    </div>
+                    <div class="col-12 services__menu">
+                        <a href="#" class="services__menu__link uppercase service__menu__active">проведение гостехосмотра</a>
+                        <a href="#" class="services__menu__link uppercase">страхование и кредитование</a>
+                        <a href="#" class="services__menu__link uppercase">услуги автомойки</a>
+                        <a href="#" class="services__menu__link uppercase">услуги автосервиса</a>
+                    </div>
+                    <div class="col-12 auto__review" id="auto__review">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="auto__review__elem dig__block">
+                                    <div class="dig__header">
+                                        <h3 class="dig__header__caption white">Категория В</h3>
+                                        <p class="dig__header__desc white">легковые автомобили</p>
+                                    </div>
+                                    <div class="dig__body">
+                                        <h6 class="dig__body__caption">Описание услуги:</h6>
+                                        <p class="dig__body__desc">Используемые для перевозки пассажиров, имеющие, помимо места водителя, не более четырех мест для сидения</p>
+                                        <h2 class="money__price rub">720</h2>
+                                        <a href="#" class="btn btn__red dig__btn">Записаться</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="auto__review__elem dig__block">
+                                    <div class="dig__header">
+                                        <h3 class="dig__header__caption white">Категория В</h3>
+                                        <p class="dig__header__desc white">легковые автомобили</p>
+                                    </div>
+                                    <div class="dig__body">
+                                        <h6 class="dig__body__caption">Описание услуги:</h6>
+                                        <p class="dig__body__desc">Используемые для перевозки пассажиров, имеющие, помимо места водителя, не более четырех мест для сидения</p>
+                                        <h2 class="money__price rub">1 290</h2>
+                                        <a href="#" class="btn btn__red dig__btn">Записаться</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="auto__review__elem dig__block">
+                                    <div class="dig__header">
+                                        <h3 class="dig__header__caption white">Категория В</h3>
+                                        <p class="dig__header__desc white">легковые автомобили</p>
+                                    </div>
+                                    <div class="dig__body">
+                                        <h6 class="dig__body__caption">Описание услуги:</h6>
+                                        <p class="dig__body__desc">Используемые для перевозки пассажиров, имеющие, помимо места водителя, не более четырех мест для сидения</p>
+                                        <h2 class="money__price rub">2 450</h2>
+                                        <a href="#" class="btn btn__red dig__btn">Записаться</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="about__caption uppercase text__center">О компании</h2>
+                    </div>
+                    <div class="col-12 about__desc">
+                        <p>ООО Автограф-Авто было основано в 2012 году. Директором и учредителем является Гайнутдинов Ильяс Рустамович. Целью создания организации являлась: продажа автомобилей, мототехники, катеров, лодок, сервисное обслуживание и ремонт.</p>
+                        <p>В 2012 году организация приобрела в собственность, в центре города Ижевска, помещение площадью 2880м.кв. для организации продаж. Произвела перепланировку помещений и ремонт для оптимизации процессов продаж и логистики.</p>
+                        <p>В 2012 года компания стала официальным дилером Lifan-и открыла монобрендовый салон по продаже автомобилей Lifan. На сегодняшний день компания является лидером рынка по продаже автомобилей данной марки, и занимает более 70 % в объеме продаж автомобилей Lifanв Удмуртской Республике.</p>
+                        <p>В 2012 году компания приобретает в г. Можга УР автосалон и сервисный центр площадью 850 м.кв. для увеличения продаж. В 2012 году компания стала дилером мотобренда CF-moto. Сегодня компания так же занимает лидирующие позиции в продаже квадроциклов данной марки, и занимает более 65 % в объеме продаж данного бренда на территории Удмуртской Республики.</p>
+                        <p>В 2013 году компания стала официальным дилером GreatWall –и открыла монобрендовый салон по продаже автомобилей данной марки. На сегодняшний день компания занимает 80 % в объеме продаж автомобилей GreatWall на территории Удмуртской Республики. В 2013 году компания стала дилером мототехники Kawasaki,Suzuki, лодок и катеров Crestliner и т.д., и открыла салон «Баркос» по продаже данной техники. Площадь торгового зала составила 940 м.кв. fort-barcos.ru</p>
+                        <p>В 2014 году, в связи с увеличением слесарных и кузовных работ, компания строит новый слесарный участок для обслуживания автомобилей плащадью 350 м.кв. и кузовной центр площадью 800 м.кв.</p>
+                        <p>В 2014 году компания, для продвижения продаж построила Автосалон, площадью 550 м.кв в г. Глазове УР, который находится в 200 км. от Ижевска. И 1 Июня открыла данный салон.</p>
+                        <p>С 2006 года Мы занимаемся продажей и обслуживанием автомобилей.</p>   
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="used__cars">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="used__cars__caption uppercase white text__center">авто с пробегом</h2>
+                        <p class="used__cars__desc white text__center">orem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+                        <a href="#" class="btn btn__red used__cars__btn">Каталог авто с пробегом</a>
+                        <img src="images/cars.png" class="used__cars__cars">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sertifics" id="sertifics">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="sertifics__caption uppercase text__center">Наши сертификаты</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="sert__elem">
+                            <img src="images/sert.png" class="sert__image">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="sert__elem">
+                            <img src="images/sert.png" class="sert__image">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="sert__elem">
+                            <img src="images/sert.png" class="sert__image">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="sert__elem">
+                            <img src="images/sert.png" class="sert__image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ask" id="ask">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="ask__caption white text__center uppercase">Остались вопросы ?</h2>
+                        <p class="ask__desc white text__center">Мы с радостью ответим на все ваши вопросы</p>
+                    </div>
+                    <div class="col-12">
+                        <form action="#" class="ask__form">
+                            <input type="name" placeholder="Ваше имя" class="ask__input form__input">
+                            <input type="phone" placeholder="Ваш номер телефона" class="ask__input form__input">
+                            <input type="submit" name="submit" class="btn__red btn ask__btn" placeholder="Отправить заявку">
+                        </form>
+                    </div>
+                    <div class="col-12">
+                        <p class="form__politics text__center">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="#" class="politics__url"> Узнать больше</a> </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map" id="map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6378521bb420bc6cb2606fd34e8964609d8260a4a6f665ae0b86f45765096329&amp;width=100%25&amp;height=750&amp;lang=ru_RU&amp;scroll=true"></script>
+            <!-- <div class="map__info">
+                
+            </div> -->
+        </section>
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 footer__box">
+                        <p class="copyright">2009-2017 © Общество с ограниченной <br> ответственностью «Автограф-Авто»</p>
+                        <a href="#"><img src="images/link.png" class="logo__dev"></a>
+                        <img src="images/up.svg" class="up">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
     
     <script type="text/javascript" src="js/common.js"></script> 
