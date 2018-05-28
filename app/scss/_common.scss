@@ -100,3 +100,29 @@
     width: 253px;
     height: 40px;
 }
+
+.services {
+    .slick-prev:before {
+        content: ' ';
+        background: url(../images/left_w.svg) no-repeat;
+        width: 20px;
+        height: 25px;
+        display: block;
+    }
+    .slick-next:before {
+        content: ' ';
+        background: url(../images/right_w.svg) no-repeat;
+        width: 20px;
+        height: 25px;
+        display: block;
+    }
+    .slick-prev, .slick-next {
+        z-index: 999;
+    }
+}
+
+.sertifics {
+    .slick-prev, .slick-next {
+        display: none;
+    }
+}

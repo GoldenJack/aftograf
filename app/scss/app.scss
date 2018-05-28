@@ -321,6 +321,25 @@ html, body {
     color: #4F4F4F;
     margin-bottom: 31px;
 }
+.sert__elem {
+    display: flex;
+    justify-content: center;
+}
+.sertifics__caption__box {
+    position: relative;
+}
+.controls__carousel {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 43px / 2);
+}
+.left__click {
+    margin-right: 10px;
+}
+.left__click, .right__click {
+    cursor: pointer;
+}
 
 //ask 
 .ask {
@@ -396,6 +415,7 @@ html, body {
     bottom: 35px;
     right: 30px;
     display: none;
+    cursor: pointer;
 }
 
 @import "media";
