@@ -47,6 +47,11 @@
     .dig__btn {
         width: 100%;
     }
+    .up {
+        bottom: 0px;
+        right: 0px;
+        width: 50px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -76,6 +81,13 @@
     .dig__header:after {
         border-left: 255px solid transparent;
         border-right: 255px solid transparent;
+    }
+    .services__menu {
+        flex-flow: column;
+    }
+    .services__menu__link {
+        margin-bottom: 8px;
+        padding-bottom: 4px;
     }
 }
 @media screen and (max-width: 576px) {

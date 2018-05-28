@@ -126,3 +126,19 @@
         display: none;
     }
 }
+
+.slick-dots {
+    bottom: -50px;
+}
+.slick-dots li button:before {
+    font-size: 26px;
+    color: #E0E0E0;
+    opacity: .5;
+    &:hover {
+        color: #fff;
+    }
+}
+.slick-dots li.slick-active button:before {
+    color: #fff;
+    opacity: 1;
+}
