@@ -31,13 +31,13 @@ gulp.task('images', function(){
     return gulp.src('app/images/**/*.+(png|jpg|svg)')
     .pipe(cache(imagemin([
       imagemin.gifsicle({interlaced: true}),
-      imagemin.jpegtran({progressive: true}),
-      imageminJpegRecompress({
-        loops: 5,
-        min: 65,
-        max: 70,
-        quality:'medium'
-      }),
+      // imagemin.jpegtran({progressive: true}),
+      // imageminJpegRecompress({
+      //   loops: 5,
+      //   min: 65,
+      //   max: 70,
+      //   quality:'high'
+      // }),
       imagemin.svgo(),
       imagemin.optipng({optimizationLevel: 3}),
       pngquant({quality: '65-70', speed: 5})

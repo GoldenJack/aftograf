@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Avtograf</title>
+    <link rel="stylesheet" type="text/css" href="css/iziModal.min.css">
     <link rel="stylesheet" type="text/css" href="css/app.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -33,9 +34,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 header__menu__box">
-                            <a href="#" class="header__menu__link uppercase white">Подбор авто</a>
-                            <a href="#" class="header__menu__link uppercase white">Сертификаты</a>
-                            <a href="#" class="header__menu__link uppercase white">Услуги</a>
+                            <a href="#callback" class="header__menu__link uppercase white">Подбор авто</a>
+                            <a href="#sertifics" class="header__menu__link uppercase white">Сертификаты</a>
+                            <a href="#services" class="header__menu__link uppercase white">Услуги</a>
                         </div>
                         <div class="col-lg-4">
                             <div class="header__logo__box">
@@ -43,9 +44,9 @@
                             </div>
                         </div>
                         <div class="col-lg-4 header__menu__box">
-                            <a href="#" class="header__menu__link uppercase white">О компании</a>
-                            <a href="#" class="header__menu__link uppercase white">Отзывы</a>
-                            <a href="#" class="header__menu__link uppercase white">Контакты</a>
+                            <a href="#about" class="header__menu__link uppercase white">О компании</a>
+                            <a href="#used__cars" class="header__menu__link uppercase white">Авто с пробегом</a>
+                            <a href="#map" class="header__menu__link uppercase white">Контакты</a>
                         </div>
                     </div>
                 </div>
@@ -57,45 +58,49 @@
                             <h1 class="header__content__caption text__center white uppercase">Мультибрендовый салон <br> <span class="normal">по продаже автомобилей из Китая</span></h1>
                             <p class="header__content__desc text__center white">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру <br> сгенерировать несколько абзацев более менее осмысленного текста</p>
                             <div class="header__content__btns">
-                                <a href="#" class="btn btn__red header__content__btn__red">Подбор авто</a>
-                                <a href="#" class="btn btn__default header__content__btn__default">Каталог услуг</a>
+                                <a href="#callback" class="btn btn__red header__content__btn__red">Подбор авто</a>
+                                <a href="#services" class="btn btn__default header__content__btn__default">Каталог услуг</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <section class="catalog__links">
+        <section class="catalog__links" id="catalog__links">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-lg-3">
                         <div class="catalog__links__elem">
-                            <img src="images/foton_logo.png" alt="" class="catalog__link__image">
+                            <img src="images/hower_gray.jpg" alt="" class="catalog__link__image">
+                            <img src="images/hower_color.jpg" alt="" class="catalog__link__image__color">
                             <a href="#" class="btn btn__red catalog__link__btn">Каталог «Hower»</a>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="catalog__links__elem">
-                            <img src="images/foton_logo.png" alt="" class="catalog__link__image">
+                            <img src="images/foton_gray.jpg" alt="" class="catalog__link__image">
+                            <img src="images/foton_color.jpg" alt="" class="catalog__link__image__color">
                             <a href="#" class="btn btn__red catalog__link__btn">Каталог «Foton»</a>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="catalog__links__elem">
-                            <img src="images/foton_logo.png" alt="" class="catalog__link__image">
+                            <img src="images/lifan_gray.jpg" alt="" class="catalog__link__image">
+                            <img src="images/lifan_color.jpg" alt="" class="catalog__link__image__color">
                             <a href="#" class="btn btn__red catalog__link__btn">Каталог «Lifan»</a>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="catalog__links__elem">
-                            <img src="images/foton_logo.png" alt="" class="catalog__link__image">
+                            <img src="images/faw_gray.jpg" alt="" class="catalog__link__image">
+                            <img src="images/faw_color.jpg" alt="" class="catalog__link__image__color">
                             <a href="#" class="btn btn__red catalog__link__btn">Каталог «Faw»</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="callback">
+        <section class="callback" id="callback">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 callback__box">
@@ -116,7 +121,7 @@
                 </div>
             </div>
         </section>
-        <section class="dignity">
+        <section class="dignity" id="dignity">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-xl-3 col-sm-6">
@@ -158,7 +163,7 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -283,7 +288,7 @@
                 </div>
             </div>
         </section>
-        <section class="used__cars">
+        <section class="used__cars" id="used__cars">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -383,6 +388,46 @@
                 </div>
             </div>
         </footer>
+
+        <div class="modals">
+            <div class="modal success" id="success">
+                <div class="modal__caption">
+                    <h3 class="modal__title">Ваша заявка принята</h3>
+                    <div class="close" data-izimodal-close=""></div>
+                </div>
+                <div class="modal__body">
+                    <p class="modal__success__info">Ваша заявка принята, наш менеджер перезвонит вам в течении десяти минут.</p>
+                </div>
+            </div>
+            <div class="modal error" id="error">
+                <div class="modal__caption">
+                    <h3 class="modal__title">Ошибка</h3>
+                    <div class="close" data-izimodal-close=""></div>
+                </div>
+                <div class="modal__body">
+                    <p class="modal__success__info">При отправке данных произошла ошибка, попробуйте снова.</p>
+                </div>
+            </div>
+
+            <div class="modal callback__header__msg" id="callback__header__msg">
+                <div class="modal__caption">
+                    <h3 class="modal__title">Написать нам</h3>
+                    <div class="close" data-izimodal-close=""></div>
+                </div>
+                <div class="modal__body">
+                    
+                </div>
+            </div>
+            <div class="modal callback__header__phone" id="callback__header__phone">
+                <div class="modal__caption">
+                    <h3 class="modal__title">Заявка на обратный звонок</h3>
+                    <div class="close" data-izimodal-close=""></div>
+                </div>
+                <div class="modal__body">
+                    
+                </div>
+            </div>
+        </div>
     </div>
 
     

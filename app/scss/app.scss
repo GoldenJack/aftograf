@@ -31,7 +31,7 @@ html, body {
 }
 .header {
     width: 100%;
-    background: url(../images/back_01.jpg) no-repeat bottom center;
+    background: url(../images/1st_slide_bigger.png) no-repeat bottom center #f2f2f2;
     background-size: cover;
     padding-top: 20px;
 }
@@ -64,6 +64,10 @@ html, body {
 }
 .header__address__geo {
     margin-right: 7px;
+    cursor: pointer;
+}
+.header__address  {
+    cursor: pointer;
 }
 .header__menu {
     margin-bottom: 55px;
@@ -122,19 +126,26 @@ html, body {
 .catalog__links {
     background: #F2F2F2;
     padding-bottom: 55px;
+    margin-top: -50px;
 }
 .catalog__links__elem {
     display: flex;
     flex-flow: column;
     align-items: center;
 }
-.catalog__link__image {
-    margin-bottom: 17px;
-}
 .catalog__link__btn {
     margin-top: auto;
     width: 180px;
     height: 40px;
+}
+.catalog__link__image__color {
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+    &:hover {
+        transition: .5s;
+        opacity: 1;
+    }
 }
 
 //callback
