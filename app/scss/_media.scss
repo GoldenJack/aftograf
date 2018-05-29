@@ -92,6 +92,9 @@
     .menu__btn {
         top: 7px;
     }
+    .controls__carousel {
+        top: 5px;
+    }
 }
 @media screen and (max-width: 576px) {
     .footer__box {
@@ -119,6 +122,12 @@
     .services .slick-next {
         right: 10px;
     }
+    .sertifics__caption {
+        font-size: 26px;
+    }
+    .controls__carousel {
+        right: 15px;
+    }
 }
 @media screen and (max-width: 479px) {
     .header__content__caption {
@@ -141,6 +150,12 @@
     }
     .dig__header {
         padding: 20px;
+    }
+    .sertifics__caption {
+        margin-bottom: 50px;
+    }
+    .controls__carousel {
+        top: 40px;
     }
 }
 
