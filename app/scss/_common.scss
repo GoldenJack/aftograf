@@ -150,3 +150,82 @@
         color: #0290C8;
     }
 }
+
+
+//mobile menu
+
+.menu__btn {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 7px;
+    width: 30px;
+}
+ 
+.c-hamburger {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 40px;
+    font-size: 0;
+    text-indent: -9999px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    transition: background .3s;
+    background: none;
+}
+.c-hamburger span {
+    display: block;
+    position: absolute;
+    top: 10px;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+ 
+.c-hamburger span::before,
+.c-hamburger span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    content: "";
+}
+ 
+.c-hamburger span::before {
+    top: -10px;
+}
+ 
+.c-hamburger span::after {
+    bottom: -10px;
+}
+
+.menu__mob__right {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 200px;
+    background: #fff;
+    right: -100%;
+    height: 100%;
+    padding: 30px;
+}
+.mob__nav {
+    display: flex;
+    flex-flow: column;
+    margin-top: 24px;
+    a {
+        color: #444;
+        margin-bottom: 8px;
+    }
+}

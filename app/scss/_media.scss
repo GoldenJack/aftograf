@@ -52,6 +52,10 @@
         right: 0px;
         width: 50px;
     }
+    .menu__btn {
+        display: block;
+        top: 70px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -85,8 +89,8 @@
     .services__menu {
         flex-flow: column;
     }
-    .services__menu__link {
-
+    .menu__btn {
+        top: 7px;
     }
 }
 @media screen and (max-width: 576px) {

@@ -37,6 +37,9 @@ html, body {
 }
 .header__top {
     margin-bottom: 8px;
+    .row {
+        position: relative;
+    }
 }
 .header__msg__box {
     display: flex;
