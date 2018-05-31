@@ -2634,6 +2634,46 @@ input {
       -ms-flex-align: center;
           align-items: center; }
 
+.modal__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #4F4F4F; }
+
+.modal__body form {
+  margin-top: 28px; }
+
+.modal__body .form__input, .modal__body .form__textarea {
+  border: 1px solid #E0E0E0;
+  margin-bottom: 11px; }
+
+.modal__body .form__textarea {
+  margin-bottom: 16px;
+  height: 146px; }
+
+.modal__body .atten {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 10px;
+  color: #828282;
+  margin-bottom: 28px; }
+
+.modal__body .modal__polit {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 10px; }
+
+.modal__body .btn {
+  height: 40px;
+  margin-bottom: 18px; }
+
 .close {
   position: relative;
   margin-left: auto;

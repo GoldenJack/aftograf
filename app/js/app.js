@@ -193,18 +193,18 @@ $(document).ready(function() {
 $(document).ready(function() {
     //succes
     $('#success').iziModal({
-        width: 505,
+        width: 410,
         padding: 30
     });
     //error
     $('#error').iziModal({
-        width: 505,
+        width: 410,
         padding: 30
     });
 
     //callback header msg
     $('#callback__header__msg').iziModal({
-        width: 505,
+        width: 410,
         padding: 30
     });
     $('.header__msg__btn').click(function(e){
@@ -215,7 +215,7 @@ $(document).ready(function() {
     //callback header phone
 
     $('#callback__header__phone').iziModal({
-        width: 505,
+        width: 410,
         padding: 30
     });
     $('.header__cb__btn').click(function(e){
@@ -223,31 +223,41 @@ $(document).ready(function() {
         $('#callback__header__phone').iziModal('open');
     });
 
+    //service
+    $('#service__book').iziModal({
+        width: 410,
+        padding: 30
+    });
+    $('.dig__btn').click(function(e){
+        e.preventDefault();
+        $('#service__book').iziModal('open');
+    });
+
 
 });
 
 // ajax form
-$(document).ready(function() {
+// $(document).ready(function() {
 
-    var ajaxForm = function(self){
-        var action = self[0].action;
-        var data = self.serializeArray();
+//     var ajaxForm = function(self){
+//         var action = self[0].action;
+//         var data = self.serializeArray();
 
-        $.ajax({
-            url: action,
-            type: 'POST',
-            data: data,
-            success: function(){
-                $('#success').iziModal('open');
-            },
-            error: function(){
-                $('#error').iziModal('open');
-            }
-        })        
-    }
+//         $.ajax({
+//             url: action,
+//             type: 'POST',
+//             data: data,
+//             success: function(){
+//                 $('#success').iziModal('open');
+//             },
+//             error: function(){
+//                 $('#error').iziModal('open');
+//             }
+//         })        
+//     }
 
-    $('form').submit(function(e){
-        e.preventDefault();
-        ajaxForm($(this));
-    })
-});
+//     $('form').submit(function(e){
+//         e.preventDefault();
+//         ajaxForm($(this));
+//     })
+// });

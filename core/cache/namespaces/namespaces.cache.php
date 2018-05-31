@@ -5,6 +5,12 @@
     'path' => 'C:/server/data/htdocs/Aftograf/aftograf/core/components/ace/',
     'assets_path' => '',
   ),
+  'ajaxform' => 
+  array (
+    'name' => 'ajaxform',
+    'path' => 'C:/server/data/htdocs/Aftograf/aftograf/core/components/ajaxform/',
+    'assets_path' => '',
+  ),
   'core' => 
   array (
     'name' => 'core',

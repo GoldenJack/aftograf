@@ -24,7 +24,7 @@ gulp.task('cms-sass', function(){
     return gulp.src(['app/scss/*.scss'])
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        .pipe(gulp.dest('assets/css'))
+        .pipe(gulp.dest('assets/avtograf/css'))
 });
 
 gulp.task('images', function(){
@@ -47,25 +47,6 @@ gulp.task('images', function(){
     .pipe(gulp.dest('dist/images'))
 });
 
-gulp.task('cms-images', function(){
-    return gulp.src('app/images/**/*.+(png|jpg|svg)')
-    .pipe(cache(imagemin([
-      imagemin.gifsicle({interlaced: true}),
-      imagemin.jpegtran({progressive: true}),
-      imageminJpegRecompress({
-        loops: 5,
-        min: 65,
-        max: 70,
-        quality:'medium'
-      }),
-      imagemin.svgo(),
-      imagemin.optipng({optimizationLevel: 3}),
-      pngquant({quality: '65-70', speed: 5})
-    ],{
-      verbose: true
-    })))
-    .pipe(gulp.dest('assets/images'))
-});
 
 gulp.task('fonts', function(){
     return gulp.src('app/fonts/**/*')
@@ -74,7 +55,7 @@ gulp.task('fonts', function(){
 
 gulp.task('cms-fonts', function(){
     return gulp.src('app/fonts/**/*')
-    .pipe(gulp.dest('assets/fonts'))
+    .pipe(gulp.dest('assets/avtograf/fonts'))
 });
 
 gulp.task('css', function(){
@@ -84,7 +65,7 @@ gulp.task('css', function(){
 
 gulp.task('cms-css', function(){
     return gulp.src('node_modules/izimodal/css/iziModal.min.css')
-    .pipe(gulp.dest('assets/css'))
+    .pipe(gulp.dest('assets/avtograf/css'))
 });
 
 gulp.task('common', function(){
@@ -106,7 +87,7 @@ gulp.task('cms-common', function(){
         ])
     .pipe(concat('common.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('assets/js'))
+    .pipe(gulp.dest('assets/avtograf/js'))
 });
 
 gulp.task('js', function(){
@@ -124,7 +105,7 @@ gulp.task('cms-js', function(){
         ])
     .pipe(concat('app.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('assets/js'))
+    .pipe(gulp.dest('assets/avtograf/js'))
 });
 
 gulp.task('html', function() {
@@ -149,10 +130,9 @@ gulp.task('watch', ['browserSync', 'sass', 'images', 'fonts', 'js', 'html', 'com
     gulp.watch('app/images/', ['images']);
 });
 
-gulp.task('cms', ['cms-sass', 'cms-images', 'cms-fonts', 'cms-common', 'cms-js', 'cms-css'], function(){
+gulp.task('cms', ['cms-sass', 'cms-fonts', 'cms-common', 'cms-js', 'cms-css'], function(){
     gulp.watch('app/scss/**/*.scss', ['cms-sass']);
     gulp.watch('app/js/*.js', ['cms-js']);
-    gulp.watch('app/images/', ['cms-images']);
 })
 
 gulp.task('run', ['sass', 'images', 'fonts', 'js', 'html', 'common'])

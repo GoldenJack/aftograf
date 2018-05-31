@@ -406,15 +406,17 @@
         </footer>
 
         <div class="modals">
-            <div class="modal success" id="success">
+            <div class="modal success__msg" id="success">
                 <div class="modal__caption">
-                    <h3 class="modal__title">Ваша заявка принята</h3>
+                    <h3 class="modal__title">Сообщение отправлено</h3>
                     <div class="close" data-izimodal-close=""></div>
                 </div>
                 <div class="modal__body">
-                    <p class="modal__success__info">Ваша заявка принята, наш менеджер перезвонит вам в течении десяти минут.</p>
+                    <p class="modal__success__info">Ваше сообщение отправлено, мы свяжемся с вами по указанным вами контактным данным</p>
+                    <a href="" data-izimodal-close="" class="btn btn__red">Закрыть окно</a>
                 </div>
             </div>
+
             <div class="modal error" id="error">
                 <div class="modal__caption">
                     <h3 class="modal__title">Ошибка</h3>
@@ -431,16 +433,49 @@
                     <div class="close" data-izimodal-close=""></div>
                 </div>
                 <div class="modal__body">
-                    
+                    <form method="POST">
+                        <input type="text" name="name" placeholder="Ваше имя *" class="form__input">
+                        <input type="text" name="email" placeholder="Ваш email *" class="form__input">
+                        <input type="text" name="phone" placeholder="Ваш номер телефона" class="form__input">
+                        <textarea class="form__textarea" placeholder="Текст сообщения" name="comment"></textarea>
+                        <p class="atten">* Поля обязательные для ввода</p>
+                        <input type="submit" name="submit" class="btn btn__red" placeholder="Отправить" data-izimodal-close="">
+                        <p class="modal__polit">Нажимая на кнопку “Отправить”, вы даете свое согласие на обработку персональных данных. <a href="">Узнать больше</a></p>
+                    </form>
                 </div>
             </div>
             <div class="modal callback__header__phone" id="callback__header__phone">
                 <div class="modal__caption">
-                    <h3 class="modal__title">Заявка на обратный звонок</h3>
+                    <h3 class="modal__title">Обратный звонок</h3>
                     <div class="close" data-izimodal-close=""></div>
                 </div>
                 <div class="modal__body">
-                    
+                    <form method="POST">
+                        <input type="text" name="name" placeholder="Ваше имя *" class="form__input">
+                        <input type="text" name="phone" placeholder="Ваш номер телефона *" class="form__input">
+                        <p class="atten">* Поля обязательные для ввода</p>
+                        <input type="submit" name="submit" class="btn btn__red" placeholder="Отправить" data-izimodal-close="">
+                        <p class="modal__polit">Нажимая на кнопку “Отправить”, вы даете свое согласие на обработку персональных данных. <a href="">Узнать больше</a></p>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="modal service__book" id="service__book">
+                <div class="modal__caption">
+                    <h3 class="modal__title">Запись на услугу</h3>
+                    <div class="close" data-izimodal-close=""></div>
+                </div>
+                <div class="modal__body">
+                    <form method="POST">
+                        <input type="text" name="name" placeholder="Ваше имя *" class="form__input">
+                        <input type="text" name="email" placeholder="Ваш email *" class="form__input">
+                        <input type="text" name="phone" placeholder="Ваш номер телефона" class="form__input">
+                        <textarea class="form__textarea" placeholder="Текст сообщения" name="comment"></textarea>
+                        <p class="atten">* Поля обязательные для ввода</p>
+                        <input type="submit" name="submit" class="btn btn__red" placeholder="Отправить">
+                        <p class="modal__polit">Нажимая на кнопку “Отправить”, вы даете свое согласие на обработку персональных данных. <a href="">Узнать больше</a></p>
+                    </form>
                 </div>
             </div>
         </div>
